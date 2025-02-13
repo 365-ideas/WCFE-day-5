@@ -1,0 +1,33 @@
+.link_anim {
+  display: inline-block;
+  height: 1em;
+  overflow-y: hidden;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: $c-black;
+  }
+
+  @include hover {
+    .text {
+      transform: translateY(-1.2em);
+    }
+  }
+
+  .text {
+    text-shadow: 0 1.2em 0;
+    transition: transform 1.5s $ease-in-out-circ;
+    display: inline-block;
+    &_wrapper {
+      height: 1.1em;
+      overflow-y: hidden;
+      display: inline-block;
+    }
+  }
+}

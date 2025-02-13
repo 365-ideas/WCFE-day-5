@@ -19,13 +19,47 @@
   letter-spacing: -0.06vw;
 }
 
+.trailers-font {
+  font-family: var(--font-trailers), sans-serif;
+  font-weight: 800;
+  font-size: VW(300);
+  line-height: 70%;
+  letter-spacing: -0.06vw;
+}
+
+.luxurios-font {
+  font-family: var(--font-luxurios), sans-serif;
+  // font-weight: 800;
+  font-size: VW(300);
+  line-height: 100%;
+  letter-spacing: -0.4vw;
+
+  color: black; /* Text color */
+  text-shadow: 
+  VW(3) 0 white,  
+    VW(-3) VW(-3) 0 white,
+  VW(3) VW(-3) 0 white,
+    VW(-3) 0 white; 
+}
+
 %link {
-  @extend %body-text;
-  font-weight: bold;
+  font-family: var(--font-luxurios), sans-serif;
+  font-size: VW(48);
+  letter-spacing: 0;
+  line-height: 100%;
+}
+
+.small-text {
+  font-size: VW(12);
+  letter-spacing: -0.01vw;
 }
 
 .bold {
   font-weight: 700;
+}
+
+.uppercase {
+  text-transform: uppercase
 }
 
 .body {

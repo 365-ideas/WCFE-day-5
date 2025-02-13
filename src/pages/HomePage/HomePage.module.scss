@@ -1,15 +1,42 @@
 .home {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: VW(10);
+  padding: VW(30);
 
-  .logo {
-    width: VW(580);
-    height: VW(120);
+  
+  .title {
+    margin-top: VW(20);
     position: relative;
+
+    .text {
+      width: VW(300);
+    }
+
+    &_botom {
+      position: absolute;
+      right: 0vw;
+      width: fit-content;
+      transform: translateY(VW(-60));
+
+      .title_text {
+        margin-right: 5vw;
+      }
+
+      .text_wrapper {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    .figured_title {
+      margin-top: -.6em;
+      &_wrapper {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      
+      &_top {
+        margin-top: -.2em;
+      }
+    }
   }
 }

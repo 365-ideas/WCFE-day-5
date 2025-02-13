@@ -25,15 +25,37 @@ const inter = localFont({
   variable: '--font-inter'
 });
 
+const trailers = localFont({
+  src: [
+    {
+      path: './fonts/Trailers_Black.ttf',
+      weight: '800',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-trailers'
+});
+
+const luxuriosScript = localFont({
+  src: [
+    {
+      path: './fonts/LuxuriousScript-Regular.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-luxurios'
+});
+
 export const metadata = {
-  title: "We'a Creating For Emotions",
-  description: "We'a Creating For Emotions | Project #",
+  title: "We're Creating For Emotions",
+  description: "We're Creating For Emotions | Project #5",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html className="html" lang="en">
-      <body className={`body ${inter.variable}`}>
+      <body className={`body ${inter.variable} ${trailers.variable} ${luxuriosScript.variable}`}>
         <LoaderProvider>
           <Root>
             {children}

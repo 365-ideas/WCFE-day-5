@@ -1,0 +1,62 @@
+.header {
+  width: 100%;
+  padding: VW(25) 0;
+  // border-top: VW(1) solid $c-black;
+  // border-bottom: VW(1) solid $c-black;
+  position: relative;
+
+  display: grid;
+  grid-template-columns: repeat(10, VW(171));
+
+  .line {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: VW(1);
+    background-color: $c-black;
+
+    &_top {
+      top: 0;
+    }
+
+    &_bottom {
+      bottom: 0;
+    }
+  }
+
+  .logo {
+    position: relative;
+    width: VW(144);
+    height: VW(25);
+  }
+
+  .text {
+    &_wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: VW(20);
+    }
+    &_column {
+      display: flex;
+      flex-direction: column;
+      gap: VW(20);
+
+      &_1 {
+        grid-column: 4/6;
+      }
+
+      &_2 {
+        grid-column: 7/9;
+        flex-direction: row;
+        gap: VW(40);
+      }
+      
+      &_3 {
+        grid-column: 10/13;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: end;
+      }
+    }
+  }
+}
